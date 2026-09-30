@@ -1,0 +1,71 @@
+2026-09-30 17:21:12,650 INFO [edu.psu.se411.lab07.MainApp.main()] edu.psu.se411.lab07.MainApp - Application is starting...
+2026-09-30 17:21:12,651 INFO [edu.psu.se411.lab07.MainApp.main()] edu.psu.se411.lab07.MainApp - Booking B001 priced successfully: 214.0
+2026-09-30 17:21:12,651 INFO [edu.psu.se411.lab07.MainApp.main()] edu.psu.se411.lab07.MainApp - Booking B002 priced successfully: 500.0
+2026-09-30 17:21:12,651 INFO [edu.psu.se411.lab07.MainApp.main()] edu.psu.se411.lab07.MainApp - Booking B003 priced successfully: 400.0
+2026-09-30 17:21:12,651 INFO [edu.psu.se411.lab07.MainApp.main()] edu.psu.se411.lab07.MainApp - Booking B004 priced successfully: 1500.0
+2026-09-30 17:21:12,652 ERROR [edu.psu.se411.lab07.MainApp.main()] edu.psu.se411.lab07.MainApp - InvalidArgumentException: Luggage weight must be between 0.0 and 40.0 (given: 55.0) for booking B005
+edu.psu.se411.lab07.exceptions.InvalidArgumentException: Luggage weight must be between 0.0 and 40.0 (given: 55.0) for booking B005
+	at edu.psu.se411.lab07.model.Booking.validateValue(Booking.java:33)
+	at edu.psu.se411.lab07.model.FlightBooking.calculateTotalPrice(FlightBooking.java:33)
+	at edu.psu.se411.lab07.MainApp.computeTotalPrice(MainApp.java:24)
+	at edu.psu.se411.lab07.MainApp.main(MainApp.java:48)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.executeMainMethod(AbstractExecJavaBase.java:402)
+	at org.codehaus.mojo.exec.ExecJavaMojo.executeMainMethod(ExecJavaMojo.java:142)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.doExecClassLoader(AbstractExecJavaBase.java:377)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.lambda$execute$0(AbstractExecJavaBase.java:287)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-09-30 17:21:12,654 ERROR [edu.psu.se411.lab07.MainApp.main()] edu.psu.se411.lab07.MainApp - MissingInformationException: Luggage weight is not provided for booking B006
+edu.psu.se411.lab07.exceptions.MissingInformationException: Luggage weight is not provided for booking B006
+	at edu.psu.se411.lab07.model.Booking.validateValue(Booking.java:28)
+	at edu.psu.se411.lab07.model.FlightBooking.calculateTotalPrice(FlightBooking.java:33)
+	at edu.psu.se411.lab07.MainApp.computeTotalPrice(MainApp.java:24)
+	at edu.psu.se411.lab07.MainApp.main(MainApp.java:48)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.executeMainMethod(AbstractExecJavaBase.java:402)
+	at org.codehaus.mojo.exec.ExecJavaMojo.executeMainMethod(ExecJavaMojo.java:142)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.doExecClassLoader(AbstractExecJavaBase.java:377)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.lambda$execute$0(AbstractExecJavaBase.java:287)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-09-30 17:21:12,654 ERROR [edu.psu.se411.lab07.MainApp.main()] edu.psu.se411.lab07.MainApp - InvalidArgumentException: Distance must be between 1.0 and 2000.0 (given: 2500.0) for booking B007
+edu.psu.se411.lab07.exceptions.InvalidArgumentException: Distance must be between 1.0 and 2000.0 (given: 2500.0) for booking B007
+	at edu.psu.se411.lab07.model.Booking.validateValue(Booking.java:33)
+	at edu.psu.se411.lab07.model.TrainBooking.calculateTotalPrice(TrainBooking.java:35)
+	at edu.psu.se411.lab07.MainApp.computeTotalPrice(MainApp.java:24)
+	at edu.psu.se411.lab07.MainApp.main(MainApp.java:48)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.executeMainMethod(AbstractExecJavaBase.java:402)
+	at org.codehaus.mojo.exec.ExecJavaMojo.executeMainMethod(ExecJavaMojo.java:142)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.doExecClassLoader(AbstractExecJavaBase.java:377)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.lambda$execute$0(AbstractExecJavaBase.java:287)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-09-30 17:21:12,655 ERROR [edu.psu.se411.lab07.MainApp.main()] edu.psu.se411.lab07.MainApp - MissingInformationException: Rental days is not provided for booking B008
+edu.psu.se411.lab07.exceptions.MissingInformationException: Rental days is not provided for booking B008
+	at edu.psu.se411.lab07.model.Booking.validateValue(Booking.java:28)
+	at edu.psu.se411.lab07.model.CarRentalBooking.calculateTotalPrice(CarRentalBooking.java:30)
+	at edu.psu.se411.lab07.MainApp.computeTotalPrice(MainApp.java:24)
+	at edu.psu.se411.lab07.MainApp.main(MainApp.java:48)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.executeMainMethod(AbstractExecJavaBase.java:402)
+	at org.codehaus.mojo.exec.ExecJavaMojo.executeMainMethod(ExecJavaMojo.java:142)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.doExecClassLoader(AbstractExecJavaBase.java:377)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.lambda$execute$0(AbstractExecJavaBase.java:287)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-09-30 17:21:12,655 ERROR [edu.psu.se411.lab07.MainApp.main()] edu.psu.se411.lab07.MainApp - InvalidArgumentException: Rental days must be between 1.0 and 30.0 (given: 45.0) for booking B009
+edu.psu.se411.lab07.exceptions.InvalidArgumentException: Rental days must be between 1.0 and 30.0 (given: 45.0) for booking B009
+	at edu.psu.se411.lab07.model.Booking.validateValue(Booking.java:33)
+	at edu.psu.se411.lab07.model.CarRentalBooking.calculateTotalPrice(CarRentalBooking.java:30)
+	at edu.psu.se411.lab07.MainApp.computeTotalPrice(MainApp.java:24)
+	at edu.psu.se411.lab07.MainApp.main(MainApp.java:48)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.executeMainMethod(AbstractExecJavaBase.java:402)
+	at org.codehaus.mojo.exec.ExecJavaMojo.executeMainMethod(ExecJavaMojo.java:142)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.doExecClassLoader(AbstractExecJavaBase.java:377)
+	at org.codehaus.mojo.exec.AbstractExecJavaBase.lambda$execute$0(AbstractExecJavaBase.java:287)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-09-30 17:21:12,655 INFO [edu.psu.se411.lab07.MainApp.main()] edu.psu.se411.lab07.MainApp - Application is stopping...
